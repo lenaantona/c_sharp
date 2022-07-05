@@ -4,7 +4,7 @@
 // 23432 -> да
 Console.Write("Введите целое пятизначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int len = num.ToString().Length;
+int len = num.ToString().Length; //нежелательно
 int i = 0;
 if (len == 5)
 {
