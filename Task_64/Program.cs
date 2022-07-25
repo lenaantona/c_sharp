@@ -2,3 +2,12 @@
 // Выполнить с помощью рекурсии.
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
+Console.Write("Задайте значение N: ");
+int n = Convert.ToInt32(Console.ReadLine());
+void NaturaNumber(int num)
+{
+    if (num == 0) return;
+    Console.Write($"{num} ");
+    NaturaNumber(num-1);
+}
+NaturaNumber(n);
